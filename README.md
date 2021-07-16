@@ -75,7 +75,7 @@ There's two ways to do the batch processing, you can use GUI feature on GCP, or 
  4. Add your job details into your workflow template
 
     gcloud beta dataproc workflow-templates add-job pyspark gs://${BUCKET_NAME}/input/spark_etl_job.py \
-    --step-id="week3-flight-etl" \
+    --step-id="week3-spark-etl" \
     --workflow-templates=${TEMPLATE} \
     --region=${REGION} \
     --jars=gs://spark-lib/bigquery/spark-bigquery-latest_2.12.jar
