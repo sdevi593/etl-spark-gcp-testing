@@ -93,5 +93,17 @@ There's two ways to do the batch processing, you can use GUI feature on GCP, or 
 This whole process will give me Google Storage Files and BigQuery Outputs
 
 ## Google Storage Files
+1. CSV Files
+   A folder contains csv files which is partitioned by flight_date will be created
+   
+2. Parquet Files
+   A folder contains parquet files which is partitioned by flight_date will be created
+   
+3. Json Files
+  A folder contains json files which is partitioned by flight_date will be created
 
 ## BigQuery
+Within the BigQuery, these below tables will appear
+1. Flights Schema Table, with flight_date column as partition
+2. Total flights of each airline per day table which aggregated by flight_date and airline_code
+3. Total flights from source_airport to destination_airport per day table which aggregated by flight_date, source_airport, and destination_airport.
